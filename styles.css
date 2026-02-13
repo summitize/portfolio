@@ -710,6 +710,39 @@ footer {
     margin-bottom: 1rem;
 }
 
+/* Clients Section */
+.clients {
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 6rem 5%;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 3rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.client-logo {
+    width: 100%;
+    max-width: 140px;
+    filter: grayscale(1);
+    opacity: 0.5;
+    transition: all 0.4s ease;
+}
+
+.client-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.client-logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
 /* Interests */
 .interests-grid {
     display: grid;
