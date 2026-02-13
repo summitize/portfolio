@@ -773,6 +773,44 @@ footer {
     margin-bottom: 1rem;
 }
 
+/* Interests */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.interest-item {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.interest-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.interest-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.interest-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.interest-item p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
 .contact-details p {
     margin-bottom: 1rem;
     font-size: 1.1rem;
