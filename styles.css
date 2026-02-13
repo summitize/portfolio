@@ -868,8 +868,8 @@ footer {
 
 .education-item {
     display: flex;
-    gap: 3rem;
-    align-items: flex-start;
+    gap: 2rem;
+    align-items: center;
     padding: 2rem;
     background: var(--secondary-color);
     border-radius: 15px;
@@ -881,6 +881,32 @@ footer {
     transform: translateX(10px);
     border-color: var(--accent-color);
     background: rgba(255, 255, 255, 0.05);
+}
+
+.edu-logo {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+    /* Give logos a white base since school logos often have backgrounds */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+}
+
+.education-item:hover .edu-logo {
+    filter: grayscale(0);
+}
+
+.edu-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .edu-year {
