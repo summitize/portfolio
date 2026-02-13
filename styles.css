@@ -828,17 +828,19 @@ footer {
     font-weight: 600;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     align-items: center;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
+    width: 100%;
+    max-width: 500px;
 }
 
 .contact-item {
@@ -858,6 +860,7 @@ footer {
     font-size: 1.5rem;
     color: var(--accent-color);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
 }
 
 .contact-detail label {
@@ -883,10 +886,9 @@ footer {
 
 .contact-actions {
     text-align: center;
-    padding: 2.5rem;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 20px;
-    border: 1px dashed rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
 }
 
 .contact-actions p {
@@ -904,7 +906,6 @@ footer {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
-    margin: 2rem 0;
 }
 
 .social-icon {
