@@ -326,6 +326,25 @@ a {
     }
 }
 
+/* Animated Blobs Base */
+.blob {
+    position: absolute;
+    filter: blur(80px);
+    z-index: 1;
+    opacity: 0.4;
+    animation: moveBlob 20s infinite alternate;
+}
+
+@keyframes moveBlob {
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(50px, -50px) scale(1.1);
+    }
+}
+
 
 
 /* Sections */
