@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumeet | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Sumeet - Traveler, Creator, Innovator.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Space+Grotesk:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <div class="logo">SUMEET.</div>
+        <nav class="nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    class="theme-icon">
+                    <circle cx="12" cy="12" r="5" class="sun" stroke="currentColor" stroke-width="2"></circle>
+                    <path
+                        d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                        class="sun-rays" stroke="currentColor" stroke-width="2"></path>
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" class="moon" fill="currentColor"
+                        stroke="none" style="display:none;"></path>
+                </svg>
+            </button>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal-text">Designing</span>
+                    <span class="reveal-text">Digital</span>
+                    <span class="reveal-text highlight">Experiences</span>
+                </h1>
+                <p class="hero-subtitle">Bringing ideas to life through code and creativity.</p>
+                <div class="cta-group">
+                    <a href="#work" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-bg-elements">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container mobile-stack">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I am a passionate creator focused on building meaningful digital experiences. With a blend of
+                        technical expertise and artistic vision, I transform complex problems into elegant solutions.
+                    </p>
+                    <p>My journey spans across software engineering, web design, and creative storytelling.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Dedication</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section work">
+            <div class="container">
+                <h2 class="section-title">Selected Work</h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="image-overlay"></div>
+                            <span class="project-tag">Travel Blog</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Summitize Life Journeys</h3>
+                            <p>A travel blog exploring Dubai, Sri Lanka, and Australia.</p>
+                            <a href="https://summitize.github.io/ourlifejourneys/" target="_blank"
+                                class="project-link">Visit Site &nearr;</a>
+                        </div>
+                    </article>
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image gradient-2">
+                            <span class="project-tag">App</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Alpha</h3>
+                            <p>An innovative solution for modern problems.</p>
+                            <a href="#" class="project-link">Case Study &nearr;</a>
+                        </div>
+                    </article>
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image gradient-3">
+                            <span class="project-tag">Design System</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Beta</h3>
+                            <p>Exploring the boundaries of web interactivity.</p>
+                            <a href="#" class="project-link">View Design &nearr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container contact-container">
+                <div class="contact-left">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-text">Interested in collaborating or just want to say hi? I'm always open to new
+                        opportunities.</p>
+
+                    <div class="socials">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <a href="mailto:hello@example.com" class="btn btn-secondary big-btn">Say Hello</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Sumeet. All rights reserved.</p>
+            <p>Designed & Built with <span style="color:red">❤</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
