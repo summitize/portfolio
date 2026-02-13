@@ -842,11 +842,17 @@ footer {
         gap: 2rem;
     }
 
-    .contact-container {
-        flex-direction: column;
-        text-align: center;
+    .contact-card {
         padding: 2rem;
-        gap: 2rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-header {
+        margin-bottom: 2rem;
     }
 
     .socials {
