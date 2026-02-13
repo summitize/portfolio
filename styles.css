@@ -227,17 +227,64 @@ a {
     }
 }
 
+/* CTA Buttons */
+.cta-group {
+    display: flex;
+    gap: 1.5rem;
+    /* Gap between islands */
+    flex-wrap: wrap;
+}
+
 .btn {
     display: inline-block;
-    padding: 1rem 2.5rem;
-    border: 1px solid var(--text-color);
+    padding: 1rem 2rem;
     border-radius: 50px;
+    /* Pillow shape */
     font-weight: 500;
     transition: all 0.3s ease;
     cursor: none;
-    margin-right: 15px;
-    /* Spacing between buttons */
-    margin-left: 0;
+    margin: 0;
+    /* Let flex gap handle spacing */
+    font-size: 0.95rem;
+    min-width: 160px;
+    /* Ensure they have some substance */
+    text-align: center;
+}
+
+/* Specific styling for islands */
+.btn-primary {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: 2px solid var(--text-color);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--text-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Slight background for island feel */
+    color: var(--text-color);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.btn-outline:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
+    transform: translateY(-3px);
+}
+
+/* Hero Title Tweaks */
+.hero-title span {
+    display: block;
+    /* Force each span to own line */
 }
 
 /* ... keep btn-primary/outline ... */
