@@ -43,16 +43,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (themeToggle) {
         // Check for saved theme
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-            body.classList.add('light-mode');
+        try {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                body.classList.add('light-mode');
+            }
+        } catch (e) {
+            console.warn("localStorage not available");
         }
 
         themeToggle.addEventListener('click', () => {
             console.log("Theme Toggle Clicked");
             body.classList.toggle('light-mode');
             const isLight = body.classList.contains('light-mode');
-            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+
+            try {
+                localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            } catch (e) {
+                console.warn("Could not save theme preference");
+            }
 
             // Interaction effect
             themeToggle.style.transform = "scale(0.8)";
