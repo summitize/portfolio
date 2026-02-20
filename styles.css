@@ -802,7 +802,7 @@ footer {
 }
 
 .client-logo img {
-    height: 40px;
+    height: 60px;
     width: auto;
     object-fit: contain;
 }
@@ -1048,7 +1048,20 @@ footer {
 
     .nav {
         display: none;
-        /* Hide nav for simplicity on mobile in this swift mockup */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--glass-bg);
+        padding: 2rem;
+        gap: 1.5rem;
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav.active {
+        display: flex;
     }
 
     .hamburger {
