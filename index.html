@@ -11,11 +11,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Space+Grotesk:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
 
@@ -48,13 +57,13 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        <span class="reveal-text">Program & Delivery</span> <span
-                            class="reveal-text highlight">Leader</span>
+                        <span class="reveal-text">I am a</span><br>
+                        <span class="highlight" id="typed-text"></span>
                     </h1>
                     <p class="hero-subtitle">Refining Digital Transformation & Driving Global Growth.</p>
                     <div class="cta-group">
-                        <a href="#experience" class="btn btn-primary">View Experience</a>
-                        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                        <a href="#experience" class="btn btn-primary magnetic">View Experience</a>
+                        <a href="Sumeet Resume.pdf" target="_blank" class="btn btn-outline magnetic" download>Download Resume</a>
                     </div>
                 </div>
                 <div class="hero-image-container">
@@ -79,20 +88,20 @@
                         delivery organizations and aligning technology modernization with strategic business objectives.
                     </p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-item">
+                <div class="about-stats reveal">
+                    <div class="stat-item" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
                         <span class="stat-number">19+</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
                         <span class="stat-number">$3M+</span>
                         <span class="stat-label">Portfolios Managed</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
                         <span class="stat-number">40+</span>
                         <span class="stat-label">Team Size</span>
                     </div>
-                    <div class="stat-item">
+                    <div class="stat-item" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
                         <span class="stat-number">100%</span>
                         <span class="stat-label">Project Success</span>
                     </div>
@@ -109,7 +118,7 @@
                     <!-- Brillio -->
                     <div class="timeline-item">
                         <div class="timeline-date">Sep 2021 - Present</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                             <h3>Brillio Technologies</h3>
                             <span class="role">Senior Software Development Manager</span>
                             <ul>
@@ -133,7 +142,7 @@
                     <!-- Citicorp -->
                     <div class="timeline-item">
                         <div class="timeline-date">May 2015 - Sep 2021</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                             <h3>Citicorp Technology Services</h3>
                             <span class="role">AVP, Technology & DevOps Manager</span>
                             <ul>
@@ -153,7 +162,7 @@
                     <!-- Synechron -->
                     <div class="timeline-item">
                         <div class="timeline-date">May 2011 - Apr 2015</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                             <h3>Synechron Technologies</h3>
                             <span class="role">Technology Lead</span>
                             <ul>
@@ -174,7 +183,7 @@
                     <!-- Opus -->
                     <div class="timeline-item">
                         <div class="timeline-date">Jun 2008 - Jun 2011</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                             <h3>Opus Software Solutions</h3>
                             <span class="role">Development Lead</span>
                             <ul>
@@ -190,7 +199,7 @@
                     <!-- SunGard -->
                     <div class="timeline-item">
                         <div class="timeline-date">Jun 2006 - Jun 2008</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                             <h3>SunGard Technology Solutions</h3>
                             <span class="role">Software Engineer</span>
                             <ul>
@@ -211,43 +220,43 @@
             <div class="container">
                 <h2 class="section-title">Experience with Global Clients & Partners</h2>
                 <div class="clients-grid">
-                    <div class="client-logo" title="CareMetx">
+                    <div class="client-logo reveal" title="CareMetx">
                         <img src="https://unavatar.io/caremetx.com" alt="CareMetx">
                         <span class="client-name">CareMetx</span>
                     </div>
-                    <div class="client-logo" title="Dayforce">
+                    <div class="client-logo reveal" title="Dayforce">
                         <img src="https://unavatar.io/dayforce.com" alt="Dayforce">
                         <span class="client-name">Dayforce</span>
                     </div>
-                    <div class="client-logo" title="Albertsons">
+                    <div class="client-logo reveal" title="Albertsons">
                         <img src="https://unavatar.io/albertsons.com" alt="Albertsons">
                         <span class="client-name">Albertsons</span>
                     </div>
-                    <div class="client-logo" title="Ciena Blue Planet">
+                    <div class="client-logo reveal" title="Ciena Blue Planet">
                         <img src="https://unavatar.io/blueplanet.com" alt="Ciena Blue Planet">
                         <span class="client-name">Ciena Blue Planet</span>
                     </div>
-                    <div class="client-logo" title="Citi">
+                    <div class="client-logo reveal" title="Citi">
                         <img src="https://unavatar.io/citi.com" alt="Citi">
                         <span class="client-name">Citi</span>
                     </div>
-                    <div class="client-logo" title="Home Depot">
+                    <div class="client-logo reveal" title="Home Depot">
                         <img src="https://unavatar.io/homedepot.com" alt="Home Depot">
                         <span class="client-name">Home Depot</span>
                     </div>
-                    <div class="client-logo" title="IBM">
+                    <div class="client-logo reveal" title="IBM">
                         <img src="https://unavatar.io/ibm.com" alt="IBM">
                         <span class="client-name">IBM</span>
                     </div>
-                    <div class="client-logo" title="Lenovo">
+                    <div class="client-logo reveal" title="Lenovo">
                         <img src="https://unavatar.io/lenovo.com" alt="Lenovo">
                         <span class="client-name">Lenovo</span>
                     </div>
-                    <div class="client-logo" title="Western Union">
+                    <div class="client-logo reveal" title="Western Union">
                         <img src="https://unavatar.io/westernunion.com" alt="Western Union">
                         <span class="client-name">Western Union</span>
                     </div>
-                    <div class="client-logo" title="BP">
+                    <div class="client-logo reveal" title="BP">
                         <img src="https://unavatar.io/bp.com" alt="BP">
                         <span class="client-name">BP</span>
                     </div>
@@ -257,28 +266,36 @@
 
         <section id="skills" class="section">
             <div class="container">
-                <h2 class="section-title">Competencies & Certifications</h2>
-                <div class="skills-grid">
+                <h2 class="section-title reveal">Competencies & Certifications</h2>
+                
+                <div class="skill-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="leadership">Leadership</button>
+                    <button class="filter-btn" data-filter="technical">Technical</button>
+                    <button class="filter-btn" data-filter="agile">Agile/Process</button>
+                </div>
+
+                <div class="skills-grid reveal">
                     <div class="skill-category">
                         <h3>Core Competencies</h3>
                         <div class="tags">
-                            <span class="tag">Portfolio Governance</span>
-                            <span class="tag">P&L Management</span>
-                            <span class="tag">Agile / SAFe</span>
-                            <span class="tag">DevSecOps</span>
-                            <span class="tag">AI-led Automation</span>
-                            <span class="tag">Cloud Modernization</span>
-                            <span class="tag">Risk & Compliance</span>
+                            <span class="tag" data-category="leadership">Portfolio Governance</span>
+                            <span class="tag" data-category="leadership">P&L Management</span>
+                            <span class="tag" data-category="agile">Agile / SAFe</span>
+                            <span class="tag" data-category="technical">DevSecOps</span>
+                            <span class="tag" data-category="technical">AI-led Automation</span>
+                            <span class="tag" data-category="technical">Cloud Modernization</span>
+                            <span class="tag" data-category="agile">Risk & Compliance</span>
                         </div>
                     </div>
                     <div class="skill-category">
                         <h3>Certifications</h3>
                         <div class="tags">
-                            <span class="tag highlight-tag">PMP® Certified</span>
-                            <span class="tag">Google Cloud Digital Leader</span>
-                            <span class="tag">SAFe POPM</span>
-                            <span class="tag">SAFe Scrum Master</span>
-                            <span class="tag">PRINCE2 Practitioner</span>
+                            <span class="tag highlight-tag" data-category="leadership">PMP® Certified</span>
+                            <span class="tag" data-category="technical">Google Cloud Digital Leader</span>
+                            <span class="tag" data-category="agile">SAFe POPM</span>
+                            <span class="tag" data-category="agile">SAFe Scrum Master</span>
+                            <span class="tag" data-category="agile">PRINCE2 Practitioner</span>
                         </div>
                     </div>
                 </div>
@@ -297,7 +314,7 @@
                     <!-- Welingkar -->
                     <div class="timeline-item">
                         <div class="timeline-date">2009</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                             <div class="edu-header">
                                 <div class="edu-logo">
                                     <img src="https://unavatar.io/welingkar.org" alt="Welingkar">
@@ -311,7 +328,7 @@
                     <!-- VIT Pune -->
                     <div class="timeline-item">
                         <div class="timeline-date">2006</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                             <div class="edu-header">
                                 <div class="edu-logo">
                                     <img src="https://unavatar.io/vit.edu" alt="VIT Pune">
@@ -325,7 +342,7 @@
                     <!-- Amrutvahini -->
                     <div class="timeline-item">
                         <div class="timeline-date">2004</div>
-                        <div class="timeline-content">
+                        <div class="timeline-content reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                             <div class="edu-header">
                                 <div class="edu-logo">
                                     <img src="https://unavatar.io/avcoe.org" alt="Amrutvahini">
@@ -367,11 +384,55 @@
             </div>
         </section>
 
+        <section id="testimonials" class="section testimonials">
+            <div class="container reveal">
+                <h2 class="section-title">Recommendations</h2>
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" data-tilt data-tilt-max="5">
+                                <div class="quote-icon">❝</div>
+                                <p class="testimonial-text">Sumeet is an exceptional leader who consistently drives complex digital transformations. His ability to align technology with business goals while managing global teams is truly impressive.</p>
+                                <div class="testimonial-author">
+                                    <h4>Senior Executive</h4>
+                                    <span>Financial Services</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" data-tilt data-tilt-max="5">
+                                <div class="quote-icon">❝</div>
+                                <p class="testimonial-text">A strategic visionary and a trusted advisor. Sumeet drastically improved our CI/CD pipelines and DevOps culture, significantly reducing our time-to-market.</p>
+                                <div class="testimonial-author">
+                                    <h4>VP of Engineering</h4>
+                                    <span>Global Tech Enterprise</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card" data-tilt data-tilt-max="5">
+                                <div class="quote-icon">❝</div>
+                                <p class="testimonial-text">Under Sumeet's leadership, our multi-million dollar portfolio saw not only successful deliveries but also optimized margins. His P&L acumen is second to none.</p>
+                                <div class="testimonial-author">
+                                    <h4>Director of Delivery</h4>
+                                    <span>Top Tier IT Consulting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
 
+    </main>
 
         <section id="contact" class="section contact">
             <div class="container">
-                <div class="contact-card">
+                <div class="contact-card reveal" data-tilt data-tilt-max="2" data-tilt-glare data-tilt-max-glare="0.05">
                     <div class="contact-header">
                         <h2 class="section-title">Let's Connect</h2>
                         <p class="contact-tagline">Driving Digital Transformation & Strategic Growth</p>
@@ -396,15 +457,15 @@
                         </div>
 
                         <div class="social-links">
-                            <a href="https://linkedin.com/in/sumeetsb" target="_blank" class="social-icon"
+                            <a href="https://linkedin.com/in/sumeetsb" target="_blank" class="social-icon magnetic"
                                 title="LinkedIn">
                                 <span>🔗</span>
                             </a>
-                            <a href="https://www.facebook.com/vagonr/" target="_blank" class="social-icon"
+                            <a href="https://www.facebook.com/vagonr/" target="_blank" class="social-icon magnetic"
                                 title="Facebook">
                                 <span>📘</span>
                             </a>
-                            <a href="https://www.instagram.com/summitize/" target="_blank" class="social-icon"
+                            <a href="https://www.instagram.com/summitize/" target="_blank" class="social-icon magnetic"
                                 title="Instagram">
                                 <span>📷</span>
                             </a>
@@ -412,7 +473,7 @@
 
                         <div class="contact-actions">
                             <p>Ready to discuss your next strategic initiative?</p>
-                            <a href="mailto:sumeetboob@gmail.com" class="btn btn-primary big-btn">Get In Touch</a>
+                            <a href="mailto:sumeetboob@gmail.com" class="btn btn-primary big-btn magnetic">Get In Touch</a>
                         </div>
                     </div>
                 </div>
@@ -420,12 +481,16 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="reveal">
         <div class="container footer-content">
             <p>&copy; 2026 Sumeet Boob. All rights reserved.</p>
             <p>Designed & Built with <span style="color:red">❤</span></p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
 
 </html>
