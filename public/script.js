@@ -104,38 +104,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 5. Theme Controls (slider + header Day/Night shortcut)
+    // 5. Theme Controls (slider in the floating footer)
     const themeSlider = document.getElementById('theme-slider');
     if (themeSlider) {
         themeSlider.addEventListener('input', (e) => {
             const selectedTheme = THEMES[parseInt(e.target.value, 10)] || THEMES[0];
             applyTheme(selectedTheme.id);
-        });
-    }
-
-    const themeToggle = document.getElementById('theme-toggle');
-    if (themeToggle) {
-        const syncThemeToggleLabel = () => {
-            const isDark = document.documentElement.classList.contains('dark');
-            themeToggle.setAttribute('aria-label', isDark ? 'Switch to day theme' : 'Switch to night theme');
-            themeToggle.setAttribute('title', isDark ? 'Switch to day theme' : 'Switch to night theme');
-        };
-        syncThemeToggleLabel();
-
-        const toggleTheme = () => {
-            const isDark = document.documentElement.classList.contains('dark');
-            applyTheme(isDark ? 'light' : 'dark');
-            syncThemeToggleLabel();
-            themeToggle.style.transform = "scale(0.8)";
-            setTimeout(() => themeToggle.style.transform = "scale(1.1)", 100);
-        };
-
-        themeToggle.addEventListener('click', toggleTheme);
-        themeToggle.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault();
-                toggleTheme();
-            }
         });
     }
 
