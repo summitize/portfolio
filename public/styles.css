@@ -225,11 +225,11 @@ a {
     display: block;
 }
 
-body.light-mode .theme-toggle .sun-icon {
+.dark .theme-toggle .sun-icon {
     display: block;
 }
 
-body.light-mode .theme-toggle .moon-icon {
+.dark .theme-toggle .moon-icon {
     display: none;
 }
 
@@ -571,7 +571,7 @@ body.light-mode .theme-toggle .moon-icon {
 
 .project-image {
     height: 250px;
-    background-color: #333;
+    background-color: var(--track-bg);
     position: relative;
     display: flex;
     align-items: center;
@@ -739,7 +739,7 @@ footer {
 
 .timeline-content:hover {
     transform: translateY(-5px);
-    border-color: rgba(212, 175, 55, 0.3);
+    border-color: var(--border-strong);
 }
 
 .timeline-date {
@@ -816,12 +816,12 @@ footer {
 
 .tag:hover {
     border-color: var(--accent-color);
-    background: rgba(212, 175, 55, 0.1);
+    background: var(--accent-soft);
     transform: translateY(-2px);
 }
 
 .highlight-tag {
-    background: rgba(212, 175, 55, 0.2);
+    background: var(--accent-tint);
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
@@ -1176,8 +1176,8 @@ footer {
 .site-card:hover {
     transform: translateY(-8px);
     border-color: var(--accent-color);
-    background: rgba(212, 175, 55, 0.05);
-    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+    background: var(--accent-faint);
+    box-shadow: 0 10px 30px var(--accent-glow);
 }
 
 .site-icon {
@@ -1240,7 +1240,7 @@ footer {
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 8px;
-    background: white;
+    background: var(--edu-logo-bg);
     display: flex;
     align-items: center;
     justify-content: center;
