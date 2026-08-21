@@ -1,3 +1,57 @@
+// ==========================================================
+// 0. Theme System — runs immediately (script.js is deferred,
+//    so this executes right after HTML parsing, before first
+//    paint, avoiding a flash of the default theme)
+// ==========================================================
+const THEME_STORAGE_KEY = "sumeet-portfolio-theme";
+const LEGACY_THEME_STORAGE_KEY = "theme"; // pre-slider key ("light"/"dark")
+
+const THEMES = [
+    { id: "light", name: "Day ☀️" },
+    { id: "theme-sunset", name: "Sunset 🌅" },
+    { id: "theme-rose", name: "Light Pink 🌸" },
+    { id: "theme-sky", name: "Light Blue 🌊" },
+    { id: "theme-cyberpunk", name: "Neon ⚡" },
+    { id: "theme-emerald", name: "Emerald 🌿" },
+    { id: "theme-sapphire", name: "Sapphire 🌌" },
+    { id: "dark", name: "Night 🌙" }
+];
+
+function readStoredTheme() {
+    try {
+        return localStorage.getItem(THEME_STORAGE_KEY)
+            || localStorage.getItem(LEGACY_THEME_STORAGE_KEY)
+            || null;
+    } catch (e) {
+        console.warn("localStorage not available");
+        return null;
+    }
+}
+
+function storeTheme(themeId) {
+    try {
+        localStorage.setItem(THEME_STORAGE_KEY, themeId);
+    } catch (e) { /* private mode / storage disabled — session-only theming */ }
+}
+
+function applyTheme(themeId) {
+    // Math.max(0, ...) makes unknown/stale stored ids fall back to the default
+    const themeIndex = Math.max(0, THEMES.findIndex(t => t.id === themeId));
+    const theme = THEMES[themeIndex] || THEMES[0];
+    // Remove ALL theme classes, then add the selected one ("light" adds none)
+    THEMES.forEach(t => {
+        if (t.id !== "light") document.documentElement.classList.remove(t.id);
+    });
+    if (theme.id !== "light") document.documentElement.classList.add(theme.id);
+    const themeSlider = document.getElementById("theme-slider");
+    if (themeSlider) themeSlider.value = themeIndex;
+    const themeSliderLabel = document.getElementById("theme-slider-label");
+    if (themeSliderLabel) themeSliderLabel.textContent = theme.name;
+    storeTheme(theme.id);
+}
+
+applyTheme(readStoredTheme() || "light");
+
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Portfolio Script Initialized");
 
@@ -50,25 +104,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 5. Theme Toggle
+    // 5. Theme Controls (slider + header Day/Night shortcut)
+    const themeSlider = document.getElementById('theme-slider');
+    if (themeSlider) {
+        themeSlider.addEventListener('input', (e) => {
+            const selectedTheme = THEMES[parseInt(e.target.value, 10)] || THEMES[0];
+            applyTheme(selectedTheme.id);
+        });
+    }
+
     const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
     if (themeToggle) {
         const syncThemeToggleLabel = () => {
-            const isLight = body.classList.contains('light-mode');
-            themeToggle.setAttribute('aria-label', isLight ? 'Switch to night theme' : 'Switch to day theme');
-            themeToggle.setAttribute('title', isLight ? 'Switch to night theme' : 'Switch to day theme');
+            const isDark = document.documentElement.classList.contains('dark');
+            themeToggle.setAttribute('aria-label', isDark ? 'Switch to day theme' : 'Switch to night theme');
+            themeToggle.setAttribute('title', isDark ? 'Switch to day theme' : 'Switch to night theme');
         };
-
-        try {
-            if (localStorage.getItem('theme') === 'light') body.classList.add('light-mode');
-        } catch (e) { console.warn("localStorage not available"); }
         syncThemeToggleLabel();
 
         const toggleTheme = () => {
-            body.classList.toggle('light-mode');
-            const isLight = body.classList.contains('light-mode');
-            try { localStorage.setItem('theme', isLight ? 'light' : 'dark'); } catch (e) {}
+            const isDark = document.documentElement.classList.contains('dark');
+            applyTheme(isDark ? 'light' : 'dark');
             syncThemeToggleLabel();
             themeToggle.style.transform = "scale(0.8)";
             setTimeout(() => themeToggle.style.transform = "scale(1.1)", 100);

@@ -31,6 +31,14 @@ export default function Home({ pageHtml }: HomeProps) {
       <Head>
         <title>Sumeet Boob | Enterprise Transformation & Delivery Leader | PMP®</title>
         <meta name="description" content="Portfolio of Sumeet Boob - Enterprise Transformation & Delivery Leader | Program & Portfolio Management | PMP® | 20 Years of Global Leadership" />
+        {/* Restore saved theme before first paint to avoid a flash of the default theme.
+            Must live here (not in pageHtml) because React does not execute
+            inline scripts injected via dangerouslySetInnerHTML. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("sumeet-portfolio-theme")||localStorage.getItem("theme");if(t&&t!=="light"&&document.documentElement){document.documentElement.classList.add(t);}}catch(e){}})();`
+          }}
+        />
       </Head>
 
       <div style={{ minHeight: "100vh", position: "relative", background: "var(--bg-color)" }}>

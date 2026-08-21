@@ -1417,3 +1417,355 @@ footer {
 .swiper-pagination-bullet-active {
     background: var(--accent-color) !important;
 }
+
+/* =========================================================
+   COLOR THEMES — each is ONE class on <html> overriding
+   ONLY the variables defined in :root. Add new themes here.
+   ========================================================= */
+
+/* Sunset 🌅 — warm dusk */
+.theme-sunset {
+    --bg-color: #1b0e0a;
+    --text-color: #ffe9d6;
+    --accent-color: #ff8c42;
+    --secondary-color: #2a1610;
+    --glass-bg: rgba(27, 14, 10, 0.85);
+    --border-color: rgba(255, 140, 66, 0.22);
+    --muted-color: #d9b8a2;
+    --soft-text-color: #f3d9c4;
+    --subtle-text-color: #c39c82;
+    --footer-text-color: #d9b8a2;
+    --gradient-1: linear-gradient(135deg, #3d1410 0%, #7a2d1d 100%);
+    --gradient-2: linear-gradient(135deg, #7a2d1d 0%, #3d1410 100%);
+    --gradient-3: linear-gradient(120deg, #ff8c42 0%, #ffd166 100%);
+
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --shadow-color-hover: rgba(0, 0, 0, 0.5);
+    --btn-outline-bg: rgba(255, 233, 214, 0.06);
+    --btn-outline-border: rgba(255, 233, 214, 0.2);
+    --cursor-hover-bg: rgba(255, 255, 255, 0.1);
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+    --img-box-shadow: rgba(0, 0, 0, 0.5);
+    --contact-shadow: rgba(0, 0, 0, 0.3);
+    --icon-shadow: rgba(0, 0, 0, 0.2);
+    --icon-hover-shadow: rgba(0, 0, 0, 0.3);
+
+    --track-bg: #3a2018;
+    --edu-logo-bg: #ffffff;
+    --heart-color: #ff5d5d;
+    --accent-faint: rgba(255, 140, 66, 0.06);
+    --accent-soft: rgba(255, 140, 66, 0.12);
+    --accent-tint: rgba(255, 140, 66, 0.2);
+    --border-strong: rgba(255, 140, 66, 0.35);
+    --accent-glow: rgba(255, 140, 66, 0.15);
+}
+
+/* Light Pink 🌸 */
+.theme-rose {
+    --bg-color: #fdf3f7;
+    --text-color: #33202b;
+    --accent-color: #b4345f;
+    --secondary-color: #fae3ed;
+    --glass-bg: rgba(253, 243, 247, 0.85);
+    --border-color: rgba(180, 52, 95, 0.2);
+    --muted-color: #6b4a58;
+    --soft-text-color: #4a303c;
+    --subtle-text-color: #7d5f6c;
+    --footer-text-color: #6b4a58;
+    --gradient-1: linear-gradient(135deg, #f6cfdd 0%, #fae3ed 100%);
+    --gradient-2: linear-gradient(135deg, #ffffff 0%, #f6cfdd 100%);
+    --gradient-3: linear-gradient(120deg, #b4345f 0%, #e77fa5 100%);
+
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --shadow-color-hover: rgba(0, 0, 0, 0.12);
+    --btn-outline-bg: rgba(51, 32, 43, 0.05);
+    --btn-outline-border: rgba(51, 32, 43, 0.18);
+    --cursor-hover-bg: rgba(51, 32, 43, 0.1);
+    --overlay-bg: rgba(255, 255, 255, 0.6);
+    --img-box-shadow: rgba(0, 0, 0, 0.1);
+    --contact-shadow: rgba(0, 0, 0, 0.08);
+    --icon-shadow: rgba(0, 0, 0, 0.05);
+    --icon-hover-shadow: rgba(0, 0, 0, 0.12);
+
+    --track-bg: #efcddd;
+    --edu-logo-bg: #ffffff;
+    --heart-color: #d81b60;
+    --accent-faint: rgba(180, 52, 95, 0.05);
+    --accent-soft: rgba(180, 52, 95, 0.1);
+    --accent-tint: rgba(180, 52, 95, 0.18);
+    --border-strong: rgba(180, 52, 95, 0.32);
+    --accent-glow: rgba(180, 52, 95, 0.12);
+}
+
+/* Light Blue 🌊 */
+.theme-sky {
+    --bg-color: #f1f7fb;
+    --text-color: #14293b;
+    --accent-color: #0e6ba8;
+    --secondary-color: #e1eef7;
+    --glass-bg: rgba(241, 247, 251, 0.85);
+    --border-color: rgba(14, 107, 168, 0.2);
+    --muted-color: #48627a;
+    --soft-text-color: #2e4557;
+    --subtle-text-color: #5d7891;
+    --footer-text-color: #48627a;
+    --gradient-1: linear-gradient(135deg, #cfe5f4 0%, #e1eef7 100%);
+    --gradient-2: linear-gradient(135deg, #ffffff 0%, #cfe5f4 100%);
+    --gradient-3: linear-gradient(120deg, #0e6ba8 0%, #5eb6e4 100%);
+
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --shadow-color-hover: rgba(0, 0, 0, 0.12);
+    --btn-outline-bg: rgba(20, 41, 59, 0.05);
+    --btn-outline-border: rgba(20, 41, 59, 0.18);
+    --cursor-hover-bg: rgba(20, 41, 59, 0.1);
+    --overlay-bg: rgba(255, 255, 255, 0.6);
+    --img-box-shadow: rgba(0, 0, 0, 0.1);
+    --contact-shadow: rgba(0, 0, 0, 0.08);
+    --icon-shadow: rgba(0, 0, 0, 0.05);
+    --icon-hover-shadow: rgba(0, 0, 0, 0.12);
+
+    --track-bg: #cfe2f0;
+    --edu-logo-bg: #ffffff;
+    --heart-color: #0284c7;
+    --accent-faint: rgba(14, 107, 168, 0.05);
+    --accent-soft: rgba(14, 107, 168, 0.1);
+    --accent-tint: rgba(14, 107, 168, 0.18);
+    --border-strong: rgba(14, 107, 168, 0.32);
+    --accent-glow: rgba(14, 107, 168, 0.12);
+}
+
+/* Neon ⚡ — cyberpunk */
+.theme-cyberpunk {
+    --bg-color: #07070f;
+    --text-color: #eafcff;
+    --accent-color: #00f0ff;
+    --secondary-color: #10101f;
+    --glass-bg: rgba(7, 7, 15, 0.85);
+    --border-color: rgba(0, 240, 255, 0.25);
+    --muted-color: #9ab8c4;
+    --soft-text-color: #c9eef7;
+    --subtle-text-color: #7fa3b0;
+    --footer-text-color: #9ab8c4;
+    --gradient-1: linear-gradient(135deg, #12002b 0%, #001a33 100%);
+    --gradient-2: linear-gradient(135deg, #001a33 0%, #2a003b 100%);
+    --gradient-3: linear-gradient(120deg, #00f0ff 0%, #ff2bd6 100%);
+
+    --shadow-color: rgba(0, 240, 255, 0.1);
+    --shadow-color-hover: rgba(0, 240, 255, 0.2);
+    --btn-outline-bg: rgba(0, 240, 255, 0.06);
+    --btn-outline-border: rgba(0, 240, 255, 0.35);
+    --cursor-hover-bg: rgba(0, 240, 255, 0.12);
+    --overlay-bg: rgba(0, 0, 0, 0.7);
+    --img-box-shadow: rgba(0, 0, 0, 0.6);
+    --contact-shadow: rgba(0, 0, 0, 0.5);
+    --icon-shadow: rgba(0, 240, 255, 0.15);
+    --icon-hover-shadow: rgba(0, 240, 255, 0.3);
+
+    --track-bg: #1b1b33;
+    --edu-logo-bg: #ffffff;
+    --heart-color: #ff2bd6;
+    --accent-faint: rgba(0, 240, 255, 0.06);
+    --accent-soft: rgba(0, 240, 255, 0.12);
+    --accent-tint: rgba(0, 240, 255, 0.22);
+    --border-strong: rgba(0, 240, 255, 0.4);
+    --accent-glow: rgba(0, 240, 255, 0.2);
+}
+
+/* Emerald 🌿 — deep green */
+.theme-emerald {
+    --bg-color: #071410;
+    --text-color: #e3f2e9;
+    --accent-color: #3ecf8e;
+    --secondary-color: #0d211a;
+    --glass-bg: rgba(7, 20, 16, 0.85);
+    --border-color: rgba(62, 207, 142, 0.2);
+    --muted-color: #9dbcaa;
+    --soft-text-color: #c4ded0;
+    --subtle-text-color: #7fa08e;
+    --footer-text-color: #9dbcaa;
+    --gradient-1: linear-gradient(135deg, #0b2b1f 0%, #123524 100%);
+    --gradient-2: linear-gradient(135deg, #123524 0%, #0b2b1f 100%);
+    --gradient-3: linear-gradient(120deg, #3ecf8e 0%, #c8f7d8 100%);
+
+    --shadow-color: rgba(0, 0, 0, 0.35);
+    --shadow-color-hover: rgba(0, 0, 0, 0.45);
+    --btn-outline-bg: rgba(227, 242, 233, 0.06);
+    --btn-outline-border: rgba(227, 242, 233, 0.2);
+    --cursor-hover-bg: rgba(255, 255, 255, 0.1);
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+    --img-box-shadow: rgba(0, 0, 0, 0.5);
+    --contact-shadow: rgba(0, 0, 0, 0.3);
+    --icon-shadow: rgba(0, 0, 0, 0.2);
+    --icon-hover-shadow: rgba(0, 0, 0, 0.3);
+
+    --track-bg: #14301f;
+    --edu-logo-bg: #ffffff;
+    --heart-color: #f87171;
+    --accent-faint: rgba(62, 207, 142, 0.06);
+    --accent-soft: rgba(62, 207, 142, 0.12);
+    --accent-tint: rgba(62, 207, 142, 0.2);
+    --border-strong: rgba(62, 207, 142, 0.35);
+    --accent-glow: rgba(62, 207, 142, 0.15);
+}
+
+/* Sapphire 🌌 — deep blue */
+.theme-sapphire {
+    --bg-color: #080e21;
+    --text-color: #e3ebff;
+    --accent-color: #7aa2ff;
+    --secondary-color: #111c3d;
+    --glass-bg: rgba(8, 14, 33, 0.85);
+    --border-color: rgba(122, 162, 255, 0.22);
+    --muted-color: #9fb0d8;
+    --soft-text-color: #c6d4f7;
+    --subtle-text-color: #8093c2;
+    --footer-text-color: #9fb0d8;
+    --gradient-1: linear-gradient(135deg, #131f4d 0%, #1b2a66 100%);
+    --gradient-2: linear-gradient(135deg, #1b2a66 0%, #131f4d 100%);
+    --gradient-3: linear-gradient(120deg, #7aa2ff 0%, #c3d4ff 100%);
+
+    --shadow-color: rgba(0, 0, 0, 0.35);
+    --shadow-color-hover: rgba(0, 0, 0, 0.45);
+    --btn-outline-bg: rgba(227, 235, 255, 0.06);
+    --btn-outline-border: rgba(227, 235, 255, 0.2);
+    --cursor-hover-bg: rgba(255, 255, 255, 0.1);
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+    --img-box-shadow: rgba(0, 0, 0, 0.5);
+    --contact-shadow: rgba(0, 0, 0, 0.3);
+    --icon-shadow: rgba(0, 0, 0, 0.2);
+    --icon-hover-shadow: rgba(0, 0, 0, 0.3);
+
+    --track-bg: #1a2750;
+    --edu-logo-bg: #ffffff;
+    --heart-color: #ff6b8a;
+    --accent-faint: rgba(122, 162, 255, 0.06);
+    --accent-soft: rgba(122, 162, 255, 0.12);
+    --accent-tint: rgba(122, 162, 255, 0.2);
+    --border-strong: rgba(122, 162, 255, 0.35);
+    --accent-glow: rgba(122, 162, 255, 0.15);
+}
+
+/* Theme-scoped component tweaks (beyond variables) */
+.theme-cyberpunk .highlight,
+.theme-cyberpunk .stat-number,
+.theme-cyberpunk .timeline-date {
+    text-shadow: 0 0 14px var(--accent-glow), 0 0 30px var(--accent-glow);
+}
+
+.theme-sapphire .section-title::after {
+    box-shadow: 0 0 12px var(--accent-glow);
+}
+
+/* =========================================================
+   THEME SLIDER — cross-browser range input
+   ========================================================= */
+.theme-slider-container {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    background: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0.55rem 1.1rem;
+    margin: 0 auto 1.5rem;
+    width: fit-content;
+    max-width: 100%;
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.theme-slider-label {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+    min-width: 96px;
+    text-align: center;
+}
+
+.theme-slider-track-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.theme-slider-icon {
+    font-size: 0.95rem;
+    line-height: 1;
+    user-select: none;
+}
+
+input.theme-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 160px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--border-strong);
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+input.theme-slider:focus-visible {
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+/* Chrome / Safari / Edge */
+input.theme-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    border: 2px solid var(--bg-color);
+    box-shadow: 0 0 0 2px var(--accent-color);
+    transition: transform 0.15s ease;
+}
+
+input.theme-slider:hover::-webkit-slider-thumb,
+input.theme-slider:active::-webkit-slider-thumb {
+    transform: scale(1.25);
+}
+
+/* Firefox */
+input.theme-slider::-moz-range-track {
+    height: 6px;
+    border-radius: 999px;
+    background: var(--border-strong);
+}
+
+input.theme-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    border: 2px solid var(--bg-color);
+    box-shadow: 0 0 0 2px var(--accent-color);
+    transition: transform 0.15s ease;
+}
+
+input.theme-slider:hover::-moz-range-thumb,
+input.theme-slider:active::-moz-range-thumb {
+    transform: scale(1.25);
+}
+
+input.theme-slider:focus-visible::-moz-range-thumb {
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+@media (max-width: 768px) {
+    input.theme-slider {
+        width: 110px;
+    }
+
+    .theme-slider-label {
+        min-width: 84px;
+        font-size: 0.78rem;
+    }
+}
+
+.footer-heart {
+    color: var(--heart-color);
+}

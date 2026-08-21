@@ -574,9 +574,21 @@
     </main>
 
     <footer class="reveal">
+        <div class="container">
+            <div class="theme-slider-container" title="Slide to change theme">
+                <span class="theme-slider-label" id="theme-slider-label">Day ☀️</span>
+                <div class="theme-slider-track-wrapper">
+                    <span class="theme-slider-icon left-icon">☀️</span>
+                    <input type="range" id="theme-slider" class="theme-slider"
+                        min="0" max="7" step="1" value="0"
+                        aria-label="Select color theme: Day, Sunset, Light Pink, Light Blue, Neon, Emerald, Sapphire, Night" />
+                    <span class="theme-slider-icon right-icon">🌙</span>
+                </div>
+            </div>
+        </div>
         <div class="container footer-content">
             <p>&copy; 2026 Sumeet Boob. All rights reserved.</p>
-            <p>Designed & Built with <span style="color:red">❤</span></p>
+            <p>Designed & Built with <span class="footer-heart">❤</span></p>
         </div>
     </footer>
 
