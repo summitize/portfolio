@@ -669,6 +669,13 @@ footer {
     white-space: nowrap;
 }
 
+/* Safety: the floating footer must never be hidden by reveal-animation
+   initial states (opacity:0 / translateY), even if .reveal is re-added */
+footer.reveal {
+    opacity: 1;
+    transform: none;
+}
+
 /* Timeline */
 .timeline {
     position: relative;
