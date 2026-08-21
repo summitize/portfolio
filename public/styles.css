@@ -1,48 +1,28 @@
+/* =========================================================
+   THEME SYSTEM
+   Default theme: "Day" (light) — lives on :root with NO class.
+   Every other theme is ONE class on <html> (documentElement)
+   that overrides ONLY these variables. No component may hardcode
+   colors — always consume var(--...).
+   ========================================================= */
 :root {
-    --bg-color: #05050A; /* Dramatic: Very deep sapphire/plum black */
-    --text-color: #eaeaea; 
-    --accent-color: #d4af37; /* Opulent Gold */
-    --secondary-color: #10121A; /* Deep tone (sapphire/plum hint) */
-    --glass-bg: rgba(5, 5, 10, 0.85);
-    --border-color: rgba(212, 175, 55, 0.15); /* Hint of gold in borders */
-    --muted-color: #aaa;
-    --soft-text-color: #ccc;
-    --subtle-text-color: #888;
-    --footer-text-color: #666;
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Space Grotesk', sans-serif;
-    --gradient-1: linear-gradient(135deg, #0f172a 0%, #2e1025 100%); /* Sapphire to plum */
-    --gradient-2: linear-gradient(135deg, #064e3b 0%, #0f172a 100%); /* Emerald to sapphire */
-    --gradient-3: linear-gradient(120deg, #d4af37 0%, #f3e5ab 100%); /* Gold pop */
-    
-    /* Utility variables */
-    --shadow-color: rgba(255, 255, 255, 0.1);
-    --shadow-color-hover: rgba(255, 255, 255, 0.2);
-    --btn-outline-bg: rgba(255, 255, 255, 0.05);
-    --btn-outline-border: rgba(255, 255, 255, 0.2);
-    --cursor-hover-bg: rgba(255, 255, 255, 0.1);
-    --overlay-bg: rgba(0, 0, 0, 0.6);
-    --img-box-shadow: rgba(0, 0, 0, 0.5);
-    --contact-shadow: rgba(0, 0, 0, 0.3);
-    --icon-shadow: rgba(0, 0, 0, 0.2);
-    --icon-hover-shadow: rgba(0, 0, 0, 0.3);
-}
-
-body.light-mode {
+    /* Day (default light theme) */
     --bg-color: #faf9f6; /* Off-white/light gray */
-    --text-color: #121212; /* Black */
+    --text-color: #121212;
     --accent-color: #765b12; /* Deeper gold for readable day-mode text */
     --secondary-color: #f2efe9; /* Champagne tone */
     --glass-bg: rgba(250, 249, 246, 0.85);
-    --border-color: rgba(184, 150, 46, 0.2); 
+    --border-color: rgba(184, 150, 46, 0.2);
     --muted-color: #4b5563;
     --soft-text-color: #2f3338;
     --subtle-text-color: #5f6670;
     --footer-text-color: #4b5563;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
     --gradient-1: linear-gradient(135deg, #e6dfd3 0%, #f2efe9 100%); /* Soft champagne */
     --gradient-2: linear-gradient(135deg, #ffffff 0%, #e6dfd3 100%); /* Pearl to champagne */
     --gradient-3: linear-gradient(120deg, #765b12 0%, #b8962e 100%); /* Gold pop */
-    
+
     /* Utility variables */
     --shadow-color: rgba(0, 0, 0, 0.1);
     --shadow-color-hover: rgba(0, 0, 0, 0.15);
@@ -54,6 +34,53 @@ body.light-mode {
     --contact-shadow: rgba(0, 0, 0, 0.1);
     --icon-shadow: rgba(0, 0, 0, 0.05);
     --icon-hover-shadow: rgba(0, 0, 0, 0.15);
+
+    /* Component-level theming */
+    --track-bg: #e7e2d6;            /* project image placeholder tile */
+    --edu-logo-bg: #ffffff;         /* education logo tile */
+    --heart-color: #e0245e;         /* footer heart */
+    --accent-faint: rgba(118, 91, 18, 0.05);
+    --accent-soft: rgba(118, 91, 18, 0.12);
+    --accent-tint: rgba(118, 91, 18, 0.2);
+    --border-strong: rgba(184, 150, 46, 0.35);
+    --accent-glow: rgba(184, 150, 46, 0.15);
+}
+
+/* Night — single class on <html>, overrides ONLY variables */
+.dark {
+    --bg-color: #05050A; /* Dramatic: Very deep sapphire/plum black */
+    --text-color: #eaeaea;
+    --accent-color: #d4af37; /* Opulent Gold */
+    --secondary-color: #10121A; /* Deep tone (sapphire/plum hint) */
+    --glass-bg: rgba(5, 5, 10, 0.85);
+    --border-color: rgba(212, 175, 55, 0.15);
+    --muted-color: #aaa;
+    --soft-text-color: #ccc;
+    --subtle-text-color: #888;
+    --footer-text-color: #666;
+    --gradient-1: linear-gradient(135deg, #0f172a 0%, #2e1025 100%); /* Sapphire to plum */
+    --gradient-2: linear-gradient(135deg, #064e3b 0%, #0f172a 100%); /* Emerald to sapphire */
+    --gradient-3: linear-gradient(120deg, #d4af37 0%, #f3e5ab 100%); /* Gold pop */
+
+    --shadow-color: rgba(255, 255, 255, 0.1);
+    --shadow-color-hover: rgba(255, 255, 255, 0.2);
+    --btn-outline-bg: rgba(255, 255, 255, 0.05);
+    --btn-outline-border: rgba(255, 255, 255, 0.2);
+    --cursor-hover-bg: rgba(255, 255, 255, 0.1);
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+    --img-box-shadow: rgba(0, 0, 0, 0.5);
+    --contact-shadow: rgba(0, 0, 0, 0.3);
+    --icon-shadow: rgba(0, 0, 0, 0.2);
+    --icon-hover-shadow: rgba(0, 0, 0, 0.3);
+
+    --track-bg: #333;
+    --edu-logo-bg: #ffffff;
+    --heart-color: #ff4d6d;
+    --accent-faint: rgba(212, 175, 55, 0.05);
+    --accent-soft: rgba(212, 175, 55, 0.1);
+    --accent-tint: rgba(212, 175, 55, 0.2);
+    --border-strong: rgba(212, 175, 55, 0.3);
+    --accent-glow: rgba(212, 175, 55, 0.12);
 }
 
 * {
