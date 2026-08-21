@@ -18,7 +18,7 @@ function buildProfileSummary(): string {
   segments.push(`Domains: ${profileData.domains.join(", ")}`);
   segments.push(`Certifications: ${profileData.certifications.join(" | ")}`);
   segments.push(`Education: ${profileData.education.map((e) => `${e.degree} (${e.year}) at ${e.institution}`).join("; ")}`);
-  segments.push(`Patent: ${profileData.patent.title} — ${profileData.patent.number} (${profileData.patent.jurisdiction})`);
+  segments.push(`Patent: ${profileData.patent.title} — ${profileData.patent.number} (${profileData.patent.jurisdiction})${profileData.patent.pctApplication ? ` | PCT Application: ${profileData.patent.pctApplication}` : ""}`);
   segments.push(`Highlights: ${profileData.highlights.join("; ")}`);
   segments.push("Experience details:");
   for (const item of profileData.experience) {

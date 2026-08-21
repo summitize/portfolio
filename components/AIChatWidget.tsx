@@ -261,6 +261,9 @@ export default function AIChatWidget() {
             <a className={styles.linkButton} href={profileData.quickActions.downloadResume} target="_blank" rel="noreferrer">
               Download Resume
             </a>
+            <a className={styles.linkButton} href={profileData.quickActions.downloadCv} target="_blank" rel="noreferrer">
+              Download CV
+            </a>
             <a className={styles.linkButton} href={profileData.quickActions.contact}>
               Contact Sumeet
             </a>

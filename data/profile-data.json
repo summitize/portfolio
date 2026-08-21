@@ -22,6 +22,7 @@
       "period": "Sep 2021 – Present",
       "responsibilities": [
         "Owned end-to-end delivery and transformation of strategic healthcare and retail programs, leading global engineering teams while driving modernization, operational excellence, executive governance, and portfolio growth.",
+        "Leading the Sun Pharma Brand Sites account across AEM and React platforms, establishing delivery governance, operating processes, intake controls, and execution frameworks from the ground up while coordinating across multiple brand agencies, vendors, and Sun Pharma stakeholders.",
         "Partnered with executive client stakeholders to shape transformation roadmaps, delivery strategy, and multi-year technology investment priorities.",
         "Drove AI-assisted engineering productivity initiatives using GitHub Copilot and automation accelerators.",
         "Expanded strategic accounts through delivery excellence, executive relationship management, and identification of transformation opportunities.",
@@ -30,7 +31,7 @@
         "Delivered enterprise modernization initiatives across healthcare and retail platforms including CareMetx, Dayforce Tax Automation, and Albertsons Developer Portal.",
         "Awarded Employee of the Quarter twice for exceptional project delivery."
       ],
-      "accounts": ["CareMetx", "Dayforce", "Albertsons", "Ciena Blue Planet"]
+      "accounts": ["Sun Pharma", "CareMetx", "Dayforce", "Albertsons", "Ciena Blue Planet"]
     },
     {
       "company": "Citicorp Technology Services",
@@ -40,6 +41,7 @@
         "Established globally distributed engineering and DevOps operations across 4 delivery tracks with 18-member cross-functional teams spanning development, DevOps, and NPS functions.",
         "Transformed enterprise liquidity and treasury platform delivery across Java, WebSphere, and SQL-based ecosystems supporting global banking operations.",
         "Standardized DevSecOps governance and compliance initiatives including Blackduck, Checkmarx, Sonar, Contrast, and observability-driven operational controls.",
+        "Delivered mission-critical banking applications supporting corporate treasury operations with stringent availability, audit, and regulatory compliance requirements.",
         "Accelerated end-to-end deployment automation initiatives across lower environments through pre-production, improving release efficiency and reducing operational risk.",
         "Directed modernization initiatives enabling migration from legacy architecture to microservices-based platforms.",
         "Partnered with global stakeholders to strengthen governance cadence, deployment reliability, platform stability, and compliance adherence.",
@@ -83,9 +85,16 @@
   "certifications": [
     "Project Management Professional (PMP®)",
     "Google Cloud Digital Leader (GCP-CDL)",
-    "SAFe Certified Product Owner",
-    "SAFe Certified Scrum Master",
-    "PRINCE2 Practitioner"
+    "SAFe 5.1 Certified Product Owner/Product Manager",
+    "SAFe 5.1 Certified Scrum Master (SSM)",
+    "SAFe 5.1 Agilist (SA)",
+    "Certified Scrum Product Owner (CSPO)",
+    "Certified Scrum Master (CSM)",
+    "ICAgile Certified Agile Coach",
+    "Kanban Management Professional",
+    "PRINCE2 Practitioner",
+    "ITIL Version 3 Foundation - IT Service Management",
+    "Sun Certified Programmer for Java Platform (SCJP), Standard Edition 5.0"
   ],
   "education": [
     {
@@ -107,7 +116,8 @@
   "patent": {
     "title": "System and Method for Data Sharing and Group Messaging using Mobile Phone",
     "number": "225380 984/MUM/2004",
-    "jurisdiction": "India"
+    "jurisdiction": "India",
+    "pctApplication": "PCT/IN2005/000310"
   },
   "recognition": [
     "Awarded 'Employee of the Quarter' twice for exceptional project delivery in Brillio.",
@@ -145,13 +155,15 @@
   "technologyEcosystem": {
     "aiDevelopment": ["GitHub Copilot", "Codex", "Claude", "Cursor", "Antigravity", "Ollama"],
     "devSecOps": ["Jenkins", "Blackduck", "Checkmarx", "Sonar", "Contrast", "AppDynamics"],
-    "engineeringPlatforms": ["Java", "Spring Boot", "WebSphere", "AWS", "SQL"],
+    "engineeringPlatforms": ["Java", "Spring Boot", "WebSphere", "AWS", "SQL", "AEM Cloud", "React.js", "Next.js"],
     "deliveryCollaboration": ["Jira", "NetSuite", "MS Project"],
     "databaseMiddleware": ["SQL Server", "PL/SQL"]
   },
-  "resumeUrl": "/Sumeet Resume.pdf",
+  "resumeUrl": "/Sumeet_Boob_Resume.pdf",
+  "cvUrl": "/Sumeet_Boob_CV.pdf",
   "quickActions": {
-    "downloadResume": "/Sumeet Resume.pdf",
+    "downloadResume": "/Sumeet_Boob_Resume.pdf",
+    "downloadCv": "/Sumeet_Boob_CV.pdf",
     "contact": "mailto:sumeetboob@gmail.com"
   }
 }
